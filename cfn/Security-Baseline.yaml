@@ -64,20 +64,7 @@ Resources:
                   Effect: Allow
                   Resource: 'arn:aws:logs:*:*:*'
                 - Action:
-                    - 'iam:DeleteAccessKey'
-                    - 'iam:DeleteUser'
-                    - 'iam:GetAccessKeyLastUsed'
-                    - 'iam:GetUser'
-                    - 'iam:ListAccessKeys'
-                    - 'iam:ListUsers'
-                    - 'iam:UpdateAccessKey'
-                    - 'iam:UpdateUser'
                     - 'iam:ListRoles'
-                    - 'iam:GenerateServiceLastAccessedDetails'
-                    - 'iam:GetServiceLastAccessedDetails'
-                    - 'iam:DeleteRole'
-                    - 'iam:AttachRolePolicy'
-                    - 'access-analyzer:ListFindings'
                   Effect: Allow
                   Resource: '*' # Explicit that this includes all users
                 - Action:
